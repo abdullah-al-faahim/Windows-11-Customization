@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-label="Windows 11 Customization">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#11111b"/>
+      <stop offset="1" stop-color="#1e1e2e"/>
+    </linearGradient>
+    <linearGradient id="title" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f5c2e7"/>
+      <stop offset="0.5" stop-color="#cba6f7"/>
+      <stop offset="1" stop-color="#89b4fa"/>
+    </linearGradient>
+    <radialGradient id="orb1" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#cba6f7" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#cba6f7" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb2" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#89b4fa" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#89b4fa" stop-opacity="0"/>
+    </radialGradient>
+    <style>
+      .float1 { animation: f1 9s ease-in-out infinite; }
+      .float2 { animation: f2 11s ease-in-out infinite; }
+      @keyframes f1 { 0%, 100% { transform: translate(0, 0); } 50% { transform: translate(40px, 20px); } }
+      @keyframes f2 { 0%, 100% { transform: translate(0, 0); } 50% { transform: translate(-50px, -15px); } }
+      text { font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="340" rx="24" fill="url(#sky)"/>
+  <circle class="float1" cx="230" cy="90" r="220" fill="url(#orb1)"/>
+  <circle class="float2" cx="1000" cy="260" r="240" fill="url(#orb2)"/>
+
+  <!-- Windows logo, tiled like a GlazeWM layout -->
+  <g transform="translate(110 100)">
+    <rect width="64" height="64" rx="8" fill="#f5c2e7"/>
+    <rect x="72" width="64" height="64" rx="8" fill="#cba6f7"/>
+    <rect y="72" width="64" height="64" rx="8" fill="#89b4fa"/>
+    <rect x="72" y="72" width="64" height="64" rx="8" fill="#94e2d5"/>
+  </g>
+
+  <text x="300" y="160" font-size="58" font-weight="800" fill="url(#title)">Windows 11 Customization</text>
+  <text x="302" y="206" font-size="24" fill="#bac2de">Tiling WM · status bar · taskbar mods · themes · cursors · wallpapers</text>
+
+  <g font-size="16" font-weight="600">
+    <rect x="302" y="236" width="130" height="34" rx="17" fill="#313244"/>
+    <text x="367" y="258" text-anchor="middle" fill="#f5c2e7">Catppuccin</text>
+    <rect x="444" y="236" width="110" height="34" rx="17" fill="#313244"/>
+    <text x="499" y="258" text-anchor="middle" fill="#cba6f7">GlazeWM</text>
+    <rect x="566" y="236" width="86" height="34" rx="17" fill="#313244"/>
+    <text x="609" y="258" text-anchor="middle" fill="#89b4fa">YASB</text>
+    <rect x="664" y="236" width="118" height="34" rx="17" fill="#313244"/>
+    <text x="723" y="258" text-anchor="middle" fill="#94e2d5">Windhawk</text>
+    <rect x="794" y="236" width="158" height="34" rx="17" fill="#313244"/>
+    <text x="873" y="258" text-anchor="middle" fill="#a6e3a1">Flow Launcher</text>
+  </g>
+</svg>

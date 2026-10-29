@@ -1,0 +1,7 @@
+# Logs
+*.log
+
+# OS clutter
+Thumbs.db
+desktop.ini
+.DS_Store

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="76" viewBox="0 0 360 76" role="img" aria-label="Download everything as ZIP">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#cba6f7"/>
+      <stop offset="0.55" stop-color="#b4befe"/>
+      <stop offset="1" stop-color="#89b4fa"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="pill"><rect x="4" y="4" width="352" height="68" rx="34"/></clipPath>
+    <filter id="glow" x="-20%" y="-40%" width="140%" height="180%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .shine { animation: sweep 3.2s ease-in-out infinite; }
+      .arrow { animation: bob 1.6s ease-in-out infinite; }
+      @keyframes sweep { 0% { transform: translateX(-160px); } 60%, 100% { transform: translateX(400px); } }
+      @keyframes bob { 0%, 100% { transform: translateY(-2px); } 50% { transform: translateY(2px); } }
+      text { font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif; }
+    </style>
+  </defs>
+
+  <rect x="4" y="4" width="352" height="68" rx="34" fill="url(#bg)" filter="url(#glow)"/>
+  <g clip-path="url(#pill)">
+    <rect class="shine" x="0" y="0" width="120" height="76" fill="url(#shine)" transform="skewX(-20)"/>
+  </g>
+
+  <circle cx="40" cy="38" r="22" fill="#1e1e2e"/>
+  <g class="arrow" fill="none" stroke="#cba6f7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M40 27 v15"/>
+    <path d="M33 36 l7 7 7-7"/>
+    <path d="M31 48 h18"/>
+  </g>
+
+  <text x="74" y="35" font-size="20" font-weight="700" fill="#1e1e2e">Download Everything</text>
+  <text x="74" y="55" font-size="13" font-weight="600" fill="#313244">Full repository · ZIP archive</text>
+</svg>
